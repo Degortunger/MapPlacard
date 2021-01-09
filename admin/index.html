@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<title>PlacardMap</title>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="right">
+			<div class="Menu" align="center">
+				<a class="active">Bem-Vindo</a>
+				<a onclick="limparjogos();">Limpar Jogos</a>
+				<a onclick="limparmediadores();">Limpar Mediadores</a>
+				<a onclick="clearlocalstorage();">Limpar Local Storage</a>
+				<a id ="sairbt">Sair</a>
+			</div>
+		</div>
+		<div id="left">
+			<img class="imagem" src="img/placard.png">
+			<p align="center">Mediadores:</p>
+			<p align="center" id="Mediadores"> <br> </p>
+			<br>
+			<br>
+			<hr>
+			<div align="center">
+				<p align="center">Top 3 Jogos:</p>
+				Jogo<br>
+				<input id="jogo" type="text"><br> Odds
+				<br>
+				<input id="odds" type="text"><br> Horario
+				<br>
+				<input id="horas" type="text">
+				<br>
+				<br>
+				<button type='submit' id='butSubmit' onclick='addjogo()'>Adicionar</button>
+				<hr>
+			</div>
+			<p align="center">Jogos Adicionados:</p>
+			<div align="center" id="jogos"></div>
+			<hr>
+		</div>
+		</div>
+		<div id="map"></div>
+		
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+		<script src='https://maps.googleapis.com/maps/api/js?libraries=places,geometry&sensor=true&key=AIzaSyCgee1dxbgFKX9yzlnEDksSIoLLZqnusnE'></script>
+		<script src="js/funcoes.js"></script>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+@font-face {
+	font-family: "Placard Condensed";
+	src: url(font/Placardletra.otf);
+}
+
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+#left{
+	height: 100%;
+	color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: rgba(29,29,29,0.98);
+	width: 15%;
+	overflow: visible;
+	position: absolute;
+	z-index: 2;
+}
+
+#right{
+	height: 0%;
+	color: white;
+	font-family: Placard, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: rgba(249,171,182,0.80);
+	width: 14%;
+	overflow: visible;	
+	z-index: 1;
+	float: right;
+	position: relative;
+	margin-top: 15%;
+}
+
+#map{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.imagem{
+	width: 150%;
+	margin-left: -25%;
+}
+
+.Menu
+{
+  margin-top: 5%;
+}
+
+.Menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 5%;
+    text-decoration: none;
+}
+
+.Menu a:hover {
+    background-color: #ccc;
+    cursor:pointer;
+}
+
+.Menu a.active:hover {
+  cursor: text;
+}
+
+.Menu a.active {
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgba(255,0,35,0.90);
+  color: white;
+}
+
+#horario{
+	margin-top: -4%;
+	height: 60%;
+	color: #420001;
+	font-family: Placard, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: rgba(255,255,255,0.90);
+	width: 100%;
+}
+#titulo{
+	font-family: Placard, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1em;
+}
+
+#data{
+	
+}
+
+.radio{
+  width: 100%;
+  background-color: #eee;
+}
+.check{
+
+  background-color: #eee;
+  color: black;
+  display: block;
+  float: left;
+}
+.check1{
+  background-color: #eee;
+  color: black;
+  display: block;
+	float: right;
+}
+
+

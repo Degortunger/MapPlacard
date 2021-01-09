@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>PlacardMap</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div id="right">
+		<div class="Menu" align="center">
+			<a class="active">Bem-Vindo</a>
+			<a id="findMe">Mediador mais próximo</a>
+			<a id="btn_driving"><img style="vertical-align:middle" width="36px" height="auto" src="img/car.png"></a>
+			<a id="btn_walking"><img style="vertical-align:middle" width="30px" height="auto" src="img/Artboard 3.png"></a>
+			<a id="limparota">Limpar Rota</a>
+			<a onclick="sair();">Sair</a>
+		</div>
+	</div>
+	<div id="left">
+		<img class="imagem" src="img/placard.png">
+		<div align="center" id="horario">
+			<p7 id="mediador"></p7>
+			<div id="titulo" align="center">
+				<b><br> Introduza a Data Limite do seu Bilhete</b>
+			</div>
+			<br>
+			<div id="data" align="center">
+				<input id="time" type="time" name="task_time">
+			</div>
+			<div align="center">
+				<br>
+				<b><p3>Distancia:</p3></b>
+				<p></p>
+				<b><p4>Tempo:</p4></b>
+				<br>
+				<br>
+				<p2></p2>
+			</div>
+			<br>
+			<b><p3>Top 3 Jogos:</p3></b>
+			<div align="center" id="jogos"></div>
+		</div>
+
+	</div>
+	<div id="map"></div>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script src='https://maps.googleapis.com/maps/api/js?libraries=places,geometry&sensor=true&key=AIzaSyCgee1dxbgFKX9yzlnEDksSIoLLZqnusnE'></script>
+
+	<script src="js/funcoes.js"></script>
+</body>
+
+</html>
